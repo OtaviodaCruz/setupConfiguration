@@ -7,7 +7,7 @@
 echo "Instalando git"
 
 sudo apt update -y
-sudo apt intall git -y
+sudo apt intall -y git 
 
 echo "Instalando pré requisitos ndn-cxx"
 
@@ -18,7 +18,6 @@ echo "Baixando source ndn-cxx"
 git clone https://github.com/named-data/ndn-cxx --branch ndn-cxx-0.6.1 --single-branch
 
 cd ndn-cxx
-
 
 echo "Instalando ndn-cxx"
 
