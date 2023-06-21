@@ -77,6 +77,12 @@ cd ~
 
 git clone https://github.com/Nayald/ndnperf --branch ndn-cxx-0.6.0 --single-branch
 
+
+echo "--------------------------------------------------------------"
+echo "Baixando cmake..."
+
+sudo apt intall -y cmake
+
 echo "--------------------------------------------------------------"
 echo "Construindo ndnperf client..."
 
