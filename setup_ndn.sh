@@ -17,6 +17,8 @@ sudo apt-get install -y build-essential libsqlite3-dev libboost-all-dev libssl-d
 echo "--------------------------------------------------------------"
 echo "Baixando source ndn-cxx"
 
+cd ~
+
 git clone https://github.com/named-data/ndn-cxx --branch ndn-cxx-0.6.1 --single-branch
 
 cd ndn-cxx
@@ -44,9 +46,11 @@ sudo apt-get install -y build-essential pkg-config libboost-all-dev libsqlite3-d
 echo "--------------------------------------------------------------"
 echo "Baixando source NFD..."
 
+cd ~
+
 git clone https://github.com/named-data/NFD --branch NFD-0.6.1 --single-branch
 
-cd ndn-cxx
+cd NFD
 
 git submodule init && git submodule update
 
@@ -64,3 +68,27 @@ sudo cp /usr/local/etc/ndn/nfd.conf.sample /usr/local/etc/ndn/nfd.conf
 
 echo "--------------------------------------------------------------"
 echo "NFD Instalado..."
+
+
+echo "--------------------------------------------------------------"
+echo "Baixando ndnperf..."
+
+cd ~
+
+git clone https://github.com/Nayald/ndnperf --branch ndn-cxx-0.6.0 --single-branch
+
+echo "--------------------------------------------------------------"
+echo "Construindo ndnperf client..."
+
+cd ndnperf/c++/client
+
+cmake .
+make
+
+echo "--------------------------------------------------------------"
+echo "Construindo ndnperf server..."
+
+cd ndnperf/c++/server
+
+cmake .
+make
