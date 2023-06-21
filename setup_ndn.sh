@@ -39,7 +39,7 @@ echo "ndn-cxx Instalado"
 echo "--------------------------------------------------------------"
 echo "Instalando pré requisitos NFD..."
 
-sudo apt-get install build-essential pkg-config libboost-all-dev libsqlite3-dev libssl-dev libpcap-dev
+sudo apt-get install -y build-essential pkg-config libboost-all-dev libsqlite3-dev libssl-dev libpcap-dev
 
 echo "--------------------------------------------------------------"
 echo "Baixando source NFD..."
