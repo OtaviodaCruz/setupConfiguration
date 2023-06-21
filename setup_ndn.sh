@@ -45,6 +45,9 @@ echo "--------------------------------------------------------------"
 echo "Baixando source NFD..."
 
 git clone https://github.com/named-data/NFD --branch NFD-0.6.1 --single-branch
+
+cd ndn-cxx
+
 git submodule init && git submodule update
 
 echo "--------------------------------------------------------------"
