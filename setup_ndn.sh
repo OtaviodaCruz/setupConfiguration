@@ -7,11 +7,11 @@
 echo "Instalando git"
 
 sudo apt update -y
-sudo apt intall -y git 
+sudo apt install -y git 
 
 echo "Instalando pré requisitos ndn-cxx"
 
-sudo apt-get install build-essential libsqlite3-dev libboost-all-dev libssl-dev 
+sudo apt-get install -y build-essential libsqlite3-dev libboost-all-dev libssl-dev 
 
 echo "Baixando source ndn-cxx"
 
