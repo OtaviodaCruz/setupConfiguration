@@ -98,3 +98,17 @@ cd ndnperf/c++/server
 
 cmake .
 make
+
+echo "--------------------------------------------------------------"
+echo "Baixando NDN-microservices..."
+
+cd ~
+
+git clone -n https://github.com/Nayald/NDN-microservices 
+
+cd NDN-microservices 
+
+git checkout cfcfef422fadd6680ddb5a143f086d9e0d2c9ae1
+
+echo "--------------------------------------------------------------"
+echo "Fim"
